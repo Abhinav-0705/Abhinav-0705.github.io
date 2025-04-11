@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My WebPage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: rgb(41, 73, 25);
+            text-align: center;
+            font-size: 36px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        h2 {
+            color: #008080;
+            border-bottom: 2px solid #008080;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: goldenrod;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight {
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        .profile-pic {
+            display: block;
+            margin: 20px auto;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #008080;
+        }
+
+        .education-timeline {
+            position: relative;
+            margin: 30px auto;
+            padding-left: 40px;
+            max-width: 600px;
+            border-left: 4px solid #008080;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background: #008080;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 128, 128, 0.5);
+        }
+
+        .timeline-content {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
+
+        .year {
+            display: block;
+            font-size: 18px;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .institution {
+            display: block;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: #f0f0f0;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 3px solid #444;
+            box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+            height: 28px;
+            margin-top: 10px;
+        }
+
+        .progress {
+            height: 100%;
+            text-align: center;
+            line-height: 28px;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .school { background: #4caf50; width: 96%; }
+        .inter { background: #ff9800; width: 98.4%; }
+        .college { background: #2196f3; width: 99.95%; }
+
+        .skills-list {
+            font-size: 18px;
+            padding-left: 20px;
+        }
+
+        .skills-list li {
+            margin-bottom: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #008080;
+            color: goldenrod;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Who Am I?</h1>
+
+        <img src="images/profile.jpeg" alt="My Profile Picture" class="profile-pic">
+
+        <p>
+            I am <span class="highlight">Abhinav Ch</span>, from Hyderabad. I studied in a CBSE school called 
+            <span class="highlight">Sanghamitra</span> till 10th and pursued my intermediate at <span class="highlight">Narayana Junior College</span>. 
+            I am a passionate lover of <span class="highlight">Cricket, Movies, and Mystery</span>. I also have a keen interest in detective 
+            investigations, paranormal research, and historical facts. 
+        </p>
+        
+        <p>
+            Apart from that, I have always loved <span class="highlight">Mathematics</span> (at least till 12th) 
+            and have a deep interest in <span class="highlight">History and Politics</span>. My journey into 
+            <span class="highlight">Coding</span> started after I joined IIIT Hyderabad, and I am constantly learning and improving.
+        </p>
+
+        <p>
+            Being a <span class="highlight">Huge Cricket Fan</span>, my idol is none other than 
+            <span class="highlight">Captain Cool, MS Dhoni</span>, also known as <span class="highlight">Thala</span> 
+            while playing for CSK. I eagerly wait the entire year just to watch him bat in the IPL!
+        </p>
+
+        <h2>Education & Grades</h2>
+
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <div class="timeline-content school-bg">
+                    <span class="year">🏫 2012 - 2022</span>
+                    <span class="institution">Sanghamitra School (CBSE) - 96%</span>
+                    <div class="progress-bar">
+                        <div class="progress school">96%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content inter-bg">
+                    <span class="year">📖 2022 - 2024</span>
+                    <span class="institution">Narayana Junior College - 984/1000</span>
+                    <div class="progress-bar">
+                        <div class="progress inter">98.4%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content college-bg">
+                    <span class="year">🎓 2024 - 2028</span>
+                    <span class="institution">IIIT - 99.95 percentile in JEE MAINS</span>
+                    <div class="progress-bar">
+                        <div class="progress college">99.95%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+            <li>Python</li>
+            <li>C / C++</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h2>My Resume</h2>
+        <p>Download my CV: <a href="files/cv.pdf" download>Click here</a></p>
+
+        <div class="footer">
+            <p>Thanks for visiting my page!</p>
+        </div>
+    </div>
+
+</body>
+</html>
